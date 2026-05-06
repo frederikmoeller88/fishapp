@@ -414,33 +414,6 @@ width:70px !important;
 font-size:24px;
 }
 
-
-.fishTypeRow {
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:10px;
-}
-
-.fishTypeNames {
-display:grid;
-grid-template-columns:180px 1fr;
-align-items:center;
-width:100%;
-}
-
-.fishName {
-font-weight:bold;
-}
-
-.latinName {
-color:#888;
-font-style:italic;
-font-size:13px;
-text-align:left;
-margin-left:20px;
-}
-
 </style>
 </head>
 <body>
@@ -815,11 +788,8 @@ function renderSettings(){
   let name = parts[0] || "";
   let latin = parts.slice(1).join("|") || "";
 
-  fb.innerHTML += `<div class="item fishTypeRow">
-   <div class="fishTypeNames">
-     <span class="fishName">${escapeHtml(name)}</span>
-     <span class="latinName">${escapeHtml(latin)}</span>
-   </div>
+  fb.innerHTML += `<div class="item">
+   <span><b>${escapeHtml(name)}</b> <span class="latinName">${escapeHtml(latin)}</span></span>
    <span class="remove" onclick="removeFish('${jsString(x)}')">❌</span>
   </div>`;
  });
