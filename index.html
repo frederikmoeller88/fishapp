@@ -20,7 +20,7 @@ font-size:16px;
 }
 th { background:#eee; }
 
-button, select, input {
+button, input {
 width:100%;
 padding:10px;
 margin:5px 0;
@@ -136,6 +136,311 @@ opacity:0.35;
 filter:grayscale(100%);
 }
 
+
+.mainRow {
+cursor:pointer;
+}
+
+.mainRow:hover {
+background:#f1f1f1;
+}
+
+
+
+.settingsMenu button {
+width:33%;
+}
+
+
+
+
+
+.editPopupGrid {
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:10px;
+}
+
+
+
+
+.settingsChoiceMenu button {
+font-size:20px;
+padding:16px;
+}
+
+
+
+
+.editPopupGrid {
+display:grid !important;
+grid-template-columns:1fr 1fr 1fr !important;
+gap:10px;
+}
+
+
+#editPopup .popupContent {
+max-width:900px;
+}
+
+#editPopupGrid {
+display:flex !important;
+flex-direction:row !important;
+gap:10px !important;
+width:100%;
+}
+
+#editPopupGrid select {
+width:33.33% !important;
+min-width:0;
+box-sizing:border-box;
+}
+
+
+#editPopup select {
+flex: 1 1 0 !important;
+width:auto !important;
+display:block !important;
+min-width:0 !important;
+}
+
+
+#addPopup .popupContent {
+max-width:600px;
+}
+
+#addPopup select {
+font-size:16px;
+padding:8px;
+}
+
+.popupButtonRow {
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.popupButtonRow .iconBtn {
+width:50%;
+font-size:22px;
+padding:8px;
+}
+
+
+.settingsMainMenu {
+display:flex;
+flex-direction:row;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.settingsMainMenu button {
+flex:1;
+font-size:18px;
+padding:14px;
+min-width:140px;
+}
+
+#editPopup .popupButtonRow .iconBtn {
+width:33.33%;
+font-size:22px;
+padding:8px;
+}
+
+
+#settingsMainMenu button {
+flex:1 1 0 !important;
+width:auto !important;
+min-width:0 !important;
+white-space:nowrap;
+}
+
+
+#settingsMainMenu {
+display:flex !important;
+flex-direction:row !important;
+justify-content:center;
+align-items:stretch;
+gap:16px;
+width:100%;
+margin:20px auto;
+}
+
+#settingsMainMenu button {
+flex:1 1 0;
+max-width:220px;
+height:90px;
+font-size:22px;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+border-radius:12px;
+}
+
+.settingsCloseWrap {
+display:flex;
+justify-content:center;
+margin-top:25px;
+}
+
+.settingsCloseBtn {
+width:90px !important;
+font-size:28px !important;
+}
+
+
+#settingsPopup h2 {
+text-align:center;
+margin-bottom:25px;
+}
+
+#settingsMainMenu {
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
+justify-content:center !important;
+gap:18px;
+width:100%;
+margin:10px auto 0 auto;
+}
+
+#settingsMainMenu button {
+width:80%;
+max-width:420px;
+height:85px;
+font-size:24px;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+border-radius:14px;
+}
+
+.settingsCloseWrap {
+display:flex;
+justify-content:center;
+margin-top:30px;
+}
+
+.settingsCloseBtn {
+width:90px !important;
+font-size:28px !important;
+}
+
+
+.settingsCloseBtn {
+width:90px !important;
+height:70px;
+font-size:30px !important;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+}
+
+
+#editPopup select {
+font-size:22px !important;
+padding:16px !important;
+height:64px;
+border-radius:10px;
+}
+
+#editPopup .popupContent {
+max-width:1000px;
+}
+
+
+#addPopup select {
+font-size:22px !important;
+padding:16px !important;
+height:64px;
+border-radius:10px;
+flex:1 1 0 !important;
+width:auto !important;
+min-width:0 !important;
+}
+
+#addPopup .popupContent {
+max-width:1000px;
+}
+
+
+body > .settingsCloseWrap,
+body > .settingsCloseBtn,
+body > .iconBtn.settingsCloseBtn {
+display:none !important;
+}
+
+
+#fishSettingsPopup .iconBtn {
+width:70px;
+font-size:26px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+
+.latinName {
+display:inline-block;
+width:220px;
+margin-left:80px;
+color:#888;
+font-style:italic;
+font-size:13px;
+text-align:left;
+vertical-align:top;
+}
+
+#fishSettingsPopup input,
+#areaSettingsPopup input,
+#toolSettingsPopup input {
+flex:1 1 auto !important;
+width:auto !important;
+min-width:0 !important;
+font-size:16px;
+padding:10px;
+}
+
+#fishSettingsPopup .iconBtn,
+#areaSettingsPopup .iconBtn,
+#toolSettingsPopup .iconBtn {
+flex:0 0 70px !important;
+width:70px !important;
+font-size:24px;
+}
+
+
+.fishTypeRow {
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:10px;
+}
+
+.fishTypeNames {
+display:grid;
+grid-template-columns:180px 1fr;
+align-items:center;
+width:100%;
+}
+
+.fishName {
+font-weight:bold;
+}
+
+.latinName {
+color:#888;
+font-style:italic;
+font-size:13px;
+text-align:left;
+margin-left:20px;
+}
+
 </style>
 </head>
 <body>
@@ -148,8 +453,7 @@ filter:grayscale(100%);
 <th>Latin</th>
 <th>Område</th>
 <th>Redskab</th>
-<th></th>
-<th></th>
+
 </tr>
 <tbody id="list"></tbody>
 </table>
@@ -162,51 +466,110 @@ filter:grayscale(100%);
 <div class="popupContent">
 <h2>Tilføj fisk</h2>
 
-<select id="fish"></select>
-<select id="area"></select>
-<select id="tool"></select>
+<div id="addPopupGrid" style="display:flex; flex-direction:row; gap:10px; width:100%; flex-wrap:nowrap;">
+<select id="fish" style="flex:1; min-width:0;"></select>
+<select id="area" style="flex:1; min-width:0;"></select>
+<select id="tool" style="flex:1; min-width:0;"></select>
+</div>
 
-<button onclick="addFish()">Gem</button>
-<button onclick="closeAdd()">Luk</button>
+<div class="popupButtonRow">
+<button class="iconBtn" title="Gem" onclick="addFish()">💾</button>
+<button class="iconBtn" title="Luk" onclick="closeAdd()">✖️</button>
+</div>
 
 </div>
 </div>
+
 
 <div id="settingsPopup" class="popup">
 <div class="popupContent">
 
-<h2>Indstillinger</h2>
+<h2 style="text-align:center;">Indstillinger</h2>
 
-<div class="grid">
+<div id="settingsMainMenu" style="display:flex;flex-direction:column;align-items:center;gap:18px;">
+<button onclick="closeSettings(); openFishSettingsPopup()">Fisketyper</button>
+<button onclick="closeSettings(); openAreaSettingsPopup()">Områder</button>
+<button onclick="closeSettings(); openToolSettingsPopup()">Metoder</button>
+</div>
 
-<div>
-<h3>Fisketyper</h3>
+<div class="settingsCloseWrap">
+</div>
+
+</div>
+</div>
+
+<div id="fishSettingsPopup" class="popup">
+<div class="popupContent">
+
+<h2>Fisketyper</h2>
+
+<div style="display:flex; gap:10px; margin-bottom:15px;">
+<input id="newFishName" placeholder="Navn" style="flex:1;">
+<input id="newFishLatin" placeholder="Latin" style="flex:1;">
+<button class="iconBtn" title="Tilføj" onclick="addNewFish()">➕</button>
+<button class="iconBtn" onclick="closeFishSettingsPopup()">✖️</button>
+</div>
+
 <div id="fishListBox" class="listBox"></div>
 
-<input id="newFishName" placeholder="Navn">
-<input id="newFishLatin" placeholder="Latin">
-<button onclick="addNewFish()">Tilføj</button>
+</div>
 </div>
 
-<div>
-<h3>Områder</h3>
+<div id="areaSettingsPopup" class="popup">
+<div class="popupContent">
+
+<h2>Områder</h2>
+
+<div style="display:flex; gap:10px; margin-bottom:15px;">
+<input id="newArea" placeholder="Nyt område" style="flex:1;">
+<button class="iconBtn" title="Tilføj" onclick="addNewArea()">➕</button>
+<button class="iconBtn" onclick="closeAreaSettingsPopup()">✖️</button>
+</div>
+
 <div id="areaListBox" class="listBox"></div>
 
-<input id="newArea" placeholder="Nyt område">
-<button onclick="addNewArea()">Tilføj</button>
+</div>
 </div>
 
-<div>
-<h3>Metoder</h3>
+<div id="toolSettingsPopup" class="popup">
+<div class="popupContent">
+
+<h2>Metoder</h2>
+
+<div style="display:flex; gap:10px; margin-bottom:15px;">
+<input id="newTool" placeholder="Ny metode" style="flex:1;">
+<button class="iconBtn" title="Tilføj" onclick="addNewTool()">➕</button>
+<button class="iconBtn" onclick="closeToolSettingsPopup()">✖️</button>
+</div>
+
 <div id="toolListBox" class="listBox"></div>
 
-<input id="newTool" placeholder="Ny metode">
-<button onclick="addNewTool()">Tilføj</button>
+</div>
 </div>
 
+
+
+
+
+</div>
 </div>
 
-<button onclick="closeSettings()">Luk</button>
+
+<div id="editPopup" class="popup">
+<div class="popupContent">
+<h2>Rediger fisk</h2>
+
+<div id="editPopupGrid" style="display:flex !important; flex-direction:row !important; align-items:stretch; gap:10px; width:100%; flex-wrap:nowrap !important;">
+<select id="editFish" style="flex:1; min-width:0;"></select>
+<select id="editArea" style="flex:1; min-width:0;"></select>
+<select id="editTool" style="flex:1; min-width:0;"></select>
+</div>
+
+<div class="popupButtonRow">
+<button class="iconBtn" title="Gem" onclick="saveEditPopup()">💾</button>
+<button class="iconBtn" title="Slet" onclick="deleteEditPopup()">🗑️</button>
+<button class="iconBtn" title="Luk" onclick="closeEditPopup()">✖️</button>
+</div>
 
 </div>
 </div>
@@ -288,6 +651,7 @@ let tools = JSON.parse(localStorage.getItem("tools") || JSON.stringify([
 ]));
 
 let data = JSON.parse(localStorage.getItem("fishData")||"{}");
+let currentEditName = "";
 
 function unlock(){
  let input = prompt("Indtast kode:");
@@ -308,6 +672,96 @@ function applyLockState(){
 
 unlocked = sessionStorage.getItem("unlocked") === "true";
 
+
+
+
+function fillEditDropdowns(itemName){
+ let f=document.getElementById("editFish");
+ let a=document.getElementById("editArea");
+ let t=document.getElementById("editTool");
+
+ f.innerHTML="";
+ a.innerHTML="";
+ t.innerHTML="";
+
+ let item = data[itemName];
+
+ fishList.forEach(x=>{
+  let o=document.createElement("option");
+  o.value=x;
+  o.textContent=x.split("|")[0];
+  if(item && x === itemName + "|" + item.latin) o.selected = true;
+  f.appendChild(o);
+ });
+
+ areas.forEach(x=>{
+  let o=document.createElement("option");
+  o.value=x;
+  o.textContent=x;
+  if(item && x === item.area) o.selected = true;
+  a.appendChild(o);
+ });
+
+ tools.forEach(x=>{
+  let o=document.createElement("option");
+  o.value=x;
+  o.textContent=x;
+  if(item && x === item.tool) o.selected = true;
+  t.appendChild(o);
+ });
+}
+
+function openEditPopup(name){
+ name = decodeURIComponent(name);
+ if(!requireUnlock()) return;
+ currentEditName = name;
+ fillEditDropdowns(name);
+ document.getElementById("editPopup").style.display="block";
+}
+
+function closeEditPopup(){
+ document.getElementById("editPopup").style.display="none";
+ currentEditName = "";
+}
+
+function saveEditPopup(){
+ if(!requireUnlock()) return;
+ if(!currentEditName || !data[currentEditName]) return;
+
+ let fishValue = document.getElementById("editFish").value;
+ let fishParts = fishValue.split("|");
+ let newName = fishParts[0];
+ let newLatin = fishParts[1];
+
+ let oldItem = data[currentEditName];
+ let oldTime = oldItem.time || Date.now();
+
+ if(currentEditName !== newName){
+  delete data[currentEditName];
+ }
+
+ data[newName] = {
+  latin:newLatin,
+  area:document.getElementById("editArea").value,
+  tool:document.getElementById("editTool").value,
+  time:oldTime
+ };
+
+ save();
+ closeEditPopup();
+}
+
+function deleteEditPopup(){
+ if(!requireUnlock()) return;
+ if(!currentEditName) return;
+
+ if(confirm("Slet denne fisk?")){
+  delete data[currentEditName];
+  save();
+  closeEditPopup();
+ }
+}
+
 function updateLockUI(){
  let settingsBtn = document.getElementById("settingsBtn");
  if(settingsBtn){
@@ -318,24 +772,7 @@ function updateLockUI(){
    }
  }
 
- let edits = document.querySelectorAll(".editBtn");
- let deletes = document.querySelectorAll(".deleteBtn");
 
- edits.forEach(el=>{
-   if(unlocked){
-     el.classList.remove("locked");
-   } else {
-     el.classList.add("locked");
-   }
- });
-
- deletes.forEach(el=>{
-   if(unlocked){
-     el.classList.remove("locked");
-   } else {
-     el.classList.add("locked");
-   }
- });
 }
 
 function refreshDropdowns(){
@@ -374,16 +811,25 @@ function renderSettings(){
  fb.innerHTML=""; ab.innerHTML=""; tb.innerHTML="";
 
  fishList.forEach(x=>{
-  let name=x.split("|")[0];
-  fb.innerHTML += `<div class="item">${name} <span class="remove" onclick="removeFish('${x}')">❌</span></div>`;
+  let parts = String(x).split("|");
+  let name = parts[0] || "";
+  let latin = parts.slice(1).join("|") || "";
+
+  fb.innerHTML += `<div class="item fishTypeRow">
+   <div class="fishTypeNames">
+     <span class="fishName">${escapeHtml(name)}</span>
+     <span class="latinName">${escapeHtml(latin)}</span>
+   </div>
+   <span class="remove" onclick="removeFish('${jsString(x)}')">❌</span>
+  </div>`;
  });
 
  areas.forEach(x=>{
-  ab.innerHTML += `<div class="item">${x} <span class="remove" onclick="removeArea('${x}')">❌</span></div>`;
+  ab.innerHTML += `<div class="item">${escapeHtml(x)} <span class="remove" onclick="removeArea('${jsString(x)}')">❌</span></div>`;
  });
 
  tools.forEach(x=>{
-  tb.innerHTML += `<div class="item">${x} <span class="remove" onclick="removeTool('${x}')">❌</span></div>`;
+  tb.innerHTML += `<div class="item">${escapeHtml(x)} <span class="remove" onclick="removeTool('${jsString(x)}')">❌</span></div>`;
  });
 }
 
@@ -586,19 +1032,17 @@ function render(){
 
  for(let k in data){
   if(now - data[k].time < 7*24*60*60*1000){
-   html += `<tr id="row_${safeId(k)}">
+   html += `<tr class="mainRow" onclick="openEditPopup('${jsString(k)}')">
    <td><b>${escapeHtml(k)}</b></td>
    <td>${escapeHtml(data[k].latin)}</td>
    <td>${escapeHtml(data[k].area)}</td>
    <td>${escapeHtml(data[k].tool)}</td>
-   <td><span class="editBtn" onclick="editMainRow(decodeURIComponent('${jsString(k)}'))">✏️</span></td>
-   <td><span class="deleteBtn" onclick="removeFromMainList(decodeURIComponent('${jsString(k)}'))">❌</span></td>
    </tr>`;
   }
  }
 
  document.getElementById("list").innerHTML=html;
- applyLockState();
+ updateLockUI();
 }
 
 function requireUnlock(){
@@ -623,9 +1067,76 @@ function openAdd(){
 }
 function closeAdd(){ document.getElementById("addPopup").style.display="none"; }
 
+
+function hideAllSettingsPages(){
+ let ids = [
+  "settingsMainMenu",
+  "fishSettingsPage",
+  "areaSettingsPage",
+  "toolSettingsPage"
+ ];
+
+ ids.forEach(id=>{
+  let el = document.getElementById(id);
+  if(el) el.style.display = "none";
+ });
+}
+
+function backToSettingsMenu(){
+ hideAllSettingsPages();
+ document.getElementById("settingsMainMenu").style.display = "block";
+}
+
+function openFishSettings(){
+ hideAllSettingsPages();
+ document.getElementById("fishSettingsPage").style.display = "block";
+ renderSettings();
+}
+
+function openAreaSettings(){
+ hideAllSettingsPages();
+ document.getElementById("areaSettingsPage").style.display = "block";
+ renderSettings();
+}
+
+function openToolSettings(){
+ hideAllSettingsPages();
+ document.getElementById("toolSettingsPage").style.display = "block";
+ renderSettings();
+}
+
+
+function openFishSettingsPopup(){
+ renderSettings();
+ document.getElementById("fishSettingsPopup").style.display="block";
+}
+
+function closeFishSettingsPopup(){
+ document.getElementById("fishSettingsPopup").style.display="none";
+}
+
+function openAreaSettingsPopup(){
+ renderSettings();
+ document.getElementById("areaSettingsPopup").style.display="block";
+}
+
+function closeAreaSettingsPopup(){
+ document.getElementById("areaSettingsPopup").style.display="none";
+}
+
+function openToolSettingsPopup(){
+ renderSettings();
+ document.getElementById("toolSettingsPopup").style.display="block";
+}
+
+function closeToolSettingsPopup(){
+ document.getElementById("toolSettingsPopup").style.display="none";
+}
+
 function openSettings(){
  if(!requireUnlock()) return;
  document.getElementById("settingsPopup").style.display="block";
+ backToSettingsMenu();
  renderSettings();
 }
 function closeSettings(){ document.getElementById("settingsPopup").style.display="none"; }
